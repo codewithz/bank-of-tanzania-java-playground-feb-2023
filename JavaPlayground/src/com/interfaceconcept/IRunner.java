@@ -4,7 +4,7 @@ public class IRunner {
 	
 	public static void main(String[] args) {
 		IPhone iphone=new IPhone();
-		Galaxy galaxy=new Galaxy();
+		TBS galaxy=new Galaxy();
 		NokiaN3 n3=new NokiaN3();
 		
 		TanzainaMarket market=new TanzainaMarket();

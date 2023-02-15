@@ -73,6 +73,60 @@ public class StringDemo {
 		x2=x2.toUpperCase();
 		System.out.println("x2:"+x2);
 		
+		System.out.println("------------ Replace and Split Operations ----");
+		
+		String s8="Jxvx";
+		String s9=s8.replaceAll("x", "a");
+		System.out.println(s8+"----"+s9);
+		
+		String data="1,Tom,IT,Dev,3500000";
+		String[] dataArray=data.split(",");
+		System.out.println(data);
+		
+		for(String d:dataArray) {
+			System.out.println(d);
+		}
+		
+		System.out.println("------------ Substring --------------------");
+		
+		String s10="Hamburger";
+		System.out.println(s10);
+		
+		String s11=s10.substring(3);
+		System.out.println(s11);
+		
+		String s12=s10.substring(4, 8);
+		System.out.println(s12);
+		
+		
+		System.out.println("-------- StringBuffer -----------------");
+		
+		StringBuffer sb=new StringBuffer(s);
+		System.out.println(sb);
+		sb.append(s1);
+		System.out.println(sb);
+		
+		//How to convert StringBuffer back to String 
+		String s13=sb.toString();
+		System.out.println(s13);
+		
+		String x="Something";
+		//With String 
+		
+		int len=x.length();
+		String reversedString="";
+		for(int index=len-1;index>=0;index--) {
+			reversedString=reversedString+x.charAt(index);
+		}
+		System.out.println(x+"----"+reversedString);
+		
+		//String Buffer 
+		
+		StringBuffer sb1=new StringBuffer(x);
+		System.out.println(sb1);
+		sb1.reverse();
+		System.out.println(sb1);
+		
 		
 	}
 	
